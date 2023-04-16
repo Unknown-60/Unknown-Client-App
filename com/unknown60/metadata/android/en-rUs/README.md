@@ -1,12 +1,12 @@
 # Unknown Client
 
-<img src="com/unknown60/metadata/android/app_icon.png" height=120 align="right">
+<img src="../app_icon.png" height=120 align="right">
 
 Unknown Client is an open source project developed at the end of 2014. Its purpose is to automatically send a certain number of messages established by the user to WhatsApp contacts or groups.
 
 # README Translation
-- [Español](README.md)
-- [English](com/unknown60/metadata/android/en-rUs/README.md)
+- [Español](../es/README.md)
+- [English](README.md)
 
 ![License](https://img.shields.io/badge/License-GPL%2F3.0-orange?style=plastic)
 [![Pull requests](https://img.shields.io/github/issues-pr/Unknown-60/Unknown-Client-App.svg?style=plastic)](https://github.com/Unknown-60/Unknown-Client-App/pulls)
