@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+    <style>
+	html, body{
+		background-color: #0F0F0F;
+		color: #00ff00;
+	}
+	
+	* {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+	}
+	
+	body {
+		padding-top: 5%;
+		margin-top: 20px;
+		background-color: #0F0F0F;
+		padding-left: 2%;
+		padding-right: 2%;
+		font-size: 14px;
+		font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+	}
+
+	.title {
+		display: block;
+		width: 100%; 
+		
+		font-size: 16px;
+	}
+
+	p {
+	line-height: 2;
+	display: block;
+	}
+
+	b {
+	font-size: large;
+	}
+
+	corregido, cambiado, eliminado, agregado {
+		padding: 7px 7px;
+		border-radius:  15px;
+	}
+
+	hr {
+		border: none;
+         border-top-color: green;
+         border-top-style: solid;
+         border-top-width: 3px;
+	}
+	
+	h2 {
+line-height: 2;
+	}
+	corregido {
+		color: #4f6e33;
+		background-color: #e9f3e5;
+	}
+
+	cambiado {
+		background-color: #d5dee2;
+		color: #506874;
+		font-weight: bold;
+	   }
+
+	eliminado { 
+		color: #c7254e;
+		background-color: #f9f2f4
+	}
+	
+	agregado {
+		color: #336e6d;
+		background-color: #c4e5e3;
+	}
+
+	date {
+		font-family: monospace;
+	}
+
+	</style>
+</head>
+<body>
+    <hr/>
+    <h2>v1.4.0</h2>
+<p>
+	<cambiado>cambiado</cambiado> Logística cambiada. C4sper Troy ya no es necesario.
+<br/>
+</p>
+<p>
+	<corregido>corregido</corregido> Se corrigió un problema que ocasionaba que se auto envien mensajes al presionar una tecla, incluso con el ataque finalizado.
+<br/>
+</p>
+<p>
+	<cambiado>cambiado</cambiado> Se cambió la apariencia del UI.
+<br/>
+</p>
+<p>
+	<eliminado>eliminado</eliminado> Se eliminó el selector de contactos para seleccionarlo directamente desde whatsapp, de este modo es compatible con cualquier versión de android.
+<br/>
+</p>
+<p>
+	<eliminado>eliminado</eliminado> Se eliminó el permiso para acceder a los contactos (ya no es necesario con la nueva lógica del código).
+<br/>
+</p>
+<p>
+	<eliminado>eliminado</eliminado> Se eliminó el permiso para verificar el estado de la red (ya no es necesario debido a la ausencia de la actividad).
+<br/>
+</p>
+<p>
+	<agregado>agregado</agregado> Agregado nuevo ícono de la aplicación.
+<br/>
+</p>
+<p>
+	<cambiado>cambiado</cambiado> Se combinaron la funcion de enviar a grupo/contacto para mayor facilidad.
+</p>
+<p>
+	<cambiado>cambiado</cambiado> Se cambió la lógica del código para solventar un problema en el que la cantidad de mensajes seleccionados eran imprecisos. Ahora es 100% exacto.
+</p>
+<p>
+	<eliminado>eliminado</eliminado> Se eliminó la actividad que verifica el acceso a internet. Ahora está a disposición del usuario.
+	<br/><br /><hr />
+<br/><br />
+</p>
+<h2>v1.3.9</h2>
+<p>
+	<corregido>corregido</corregido> Se solucionaron problemas que causaba que se genere una excepción en la aplicación.
+</p>
+<p>
+	<agregado>agregado</agregado> Se agrego la posibilidad de enviar mensajes a grupos escribiendo el nombre de ellos.
+</p>
+<p>
+	<cambiado>cambiado</cambiado> Se cambio el selector de contactos por el predeterminado del sistema, para funcionar en versiónes de android 8.0.0 e inferiores.
+</p>
+<p>
+	<agregado>agregado</agregado> Agregado c4sper troy para omitir un parche de WhatsApp.
+<br/><br /><hr />
+<br/><br />
+</p>
+<h2>v1.3.8</h2>
+<p>
+	<agregado>agregado</agregado> Se agregó un selector de contactos interno para no escribir el número del contacto manualmente.
+</p>
+<p>
+	<corregido>corregido</corregido> Se solucionó un error que ocacionaba que un colapso al dejar la entrada de texto vacía.
+</p>
+<p>
+	<corregido>corregido</corregido> Se solucionó un error que hacía que la aplicación se cierre al terminar el ataque.
+<br/><br /><hr />
+<br/><br />
+</p>
+<h2>v1.3.7</h2>
+<p>
+	<cambiado>cambiado</cambiado> Se cambió el retraso al enviar cada mensaje, ahora se envian instantaneamente en milisegundos.
+</p>
+<p>
+	<cambiado>cambiado</cambiado> Se deshabilitó el auto apagado del servicio al terminar. Ahora el usuario elige cuando terminarlo.
+<br/><br /><hr />
+<br/><br />
+</p>
+<h2>v1.3.6</h2>
+<p>
+	<cambiado>cambiado</cambiado> Reducido el tamaño de la aplicación.
+</p>
+<p>
+	<corregido>corregido</corregido> Primer lanzamiento.
+<br/><br /><hr />
+<br/><br />
+</p>
+
+</body>
+</html>
