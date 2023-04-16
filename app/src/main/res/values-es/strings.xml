@@ -1,0 +1,37 @@
+<resources>
+    <string name="tv_bienvenido">Bievenido a Unknown Client</string>
+    <string name="tv_explicar">Esta pantalla se mostrará en el primer inicio o cada vez que el permiso de accesibilidad haya sido desactivado, ten en cuenta que apartir de android 10, aveces este permiso se remueve de manera automática por motivos de seguridad.</string>
+    <string name="tv_accesibilidad">Permiso de accesibilidad</string>
+    <string name="tv_obligatorio">(obligatorio)</string>
+    <string name="uc_descripcion">Este permiso es obligatorio para que Unknown Client funcione. No se recolecta ningún dato privado y tampoco se usa para otras acciones que no sea con el fin de usar Unknown Client.</string>
+    <string name="tv_opcional">(opcional)</string>
+    <string name="tv_conceder">Conceder</string>
+    <string name="tv_bateria">Optimización de batería</string>
+    <string name="btn_continuar">Continuar</string>
+    <string name="tv_atacar">Atacar</string>
+    <string name="tv_estado_uc">Estado Unknown Client</string>
+    <string name="tv_activado">Activo</string>
+    <string name="tv_desactivado">Inactivo</string>
+    <string name="btn_desactivar">Desactivar</string>
+    <string name="btn_activar">Activar</string>
+    <string name="tv_mensaje">Mensaje</string>
+    <string name="tv_cantidad">Cantidad de mensajes</string>
+    <string name="tv_ajustes_mensaje">Ajustes de mensaje</string>
+    <string name="rb_ninguno">Ningúno</string>
+    <string name="rb_estilo_negrita">Mensaje estilo \"negrita\"</string>
+    <string name="rb_estilo_italica">Mensaje estilo \"itálica\"</string>
+    <string name="rb_estilo_monoespaciado">Mensaje \"monoespaciado\"</string>
+	<string name="rb_estilo_tachado">Mensaje \"tachado\"</string>
+    <string name="rb_estilo_vacio">Mensaje \"vacío\"</string>
+    <string name="rb_estilo_invertir">Invertir mensaje</string>
+    <string name="toast_entrada_vacia">Porfavor, escribe el mensaje que desea enviar.</string>
+    <string name="restablecer">Restablecer</string>
+    <string name="acerca">Acerca de</string>
+    <string name="tv_acerca">Acerca de...</string>
+    <string name="tv_dialogo_resumen">Unknown Client es un proyecto de código abierto desarrollado a fines de 2014. Tiene como finalidad la de enviar de manera automática una determinada cantidad de mensajes a contactos o grupos de WhatsApp.</string>
+    <string name="tv_codigo_fuente">Código fuente:</string>
+    <string name="tv_github">Github</string>
+    <string name="tv_unknown60">Desarrollado por Unknown-60</string>
+    <string name="btn_aceptar">aceptar</string>
+   	<string name="tv_cambios">Historial De Cambios</string>
+</resources>
