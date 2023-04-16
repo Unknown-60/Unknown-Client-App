@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbarPermisos"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:padding="15dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/tv_bienvenido"
+			android:textSize="19sp"
+			android:padding="10dp"
+			android:textColor="@color/colorRojo"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/tv_explicar"
+			android:padding="10dp"
+			android:textSize="16sp"
+			android:textColor="@color/colorVerde"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:gravity="center_vertical|center_horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tv_accesibilidad"
+				android:textSize="19sp"
+				android:textColor="@color/colorRojo"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tv_obligatorio"
+				android:textSize="14sp"
+				android:textColor="@color/colorRojoOscuro"/>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/tv_conceder"
+			android:id="@+id/btn_accesibilidad"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:gravity="center_vertical|center_horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tv_bateria"
+                android:id="@+id/tv_bateria"
+				android:textSize="19sp"
+				android:textColor="@color/colorRojo"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tv_opcional"
+                android:id="@+id/tv_opcional"
+				android:textSize="14sp"
+				android:textColor="@color/colorRojoOscuro"/>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/tv_conceder"
+			android:id="@+id/btn_bateria"/>
+
+	</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+		android:padding="15dp">
+        
+       <Button
+            android:layout_width="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorVerde"
+			android:text="@string/btn_continuar"
+            android:enabled="false"
+            android:id="@+id/btn_continuar" />
+        
+    </LinearLayout>
+    
+</LinearLayout>
+

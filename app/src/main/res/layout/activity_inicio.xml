@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemTextColor="@color/colorVerde"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/PopupTheme"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_estado_uc"
+                            android:textSize="19sp"
+                            android:textColor="@color/colorRojo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_estado_actual"
+                            android:textSize="17sp"
+                            android:padding="0dp"
+                            android:textColor="@color/colorVerde"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:gravity="right|center_vertical">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/btn_desactivar"
+                            android:id="@+id/btn_estado_servicio"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tv_mensaje"
+                                android:textSize="19sp"
+                                android:textColor="@color/colorRojo" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:inputType="textMultiLine"
+                                android:padding="10dp"
+                                android:textColor="@color/colorVerde"
+                                android:background="@drawable/bg_mensajes"
+                                android:ems="10"
+                                android:id="@+id/et_mensaje"/>
+
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tv_cantidad"
+                                android:layout_marginTop="10dp"
+                                android:textSize="19sp"
+                                android:textColor="@color/colorRojo" />
+
+                        </LinearLayout>
+                        
+                        <Spinner
+                            android:id="@+id/spItems"
+                            style="@style/style_Spinner"
+                            android:background="@drawable/bg_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tv_ajustes_mensaje"
+                                android:textSize="19sp"
+                                android:textColor="@color/colorRojo" />
+                     
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:gravity="center_vertical">
+
+                            <RadioGroup 
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/text"
+                                android:id="@+id/radiogroup_uc"
+                                android:checkedButton="@+id/rb_ninguno" >
+
+                                <RadioButton 
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorVerde"
+                                    android:id="@+id/rb_ninguno"
+                                    android:text="@string/rb_ninguno" />
+
+                                <RadioButton 
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorVerde"
+                                    android:id="@+id/rb_estilo_negrita"
+                                    android:text="@string/rb_estilo_negrita" />
+
+                                <RadioButton 
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorVerde"
+                                    android:id="@+id/rb_estilo_italica"
+                                    android:text="@string/rb_estilo_italica" />
+                                
+                                <RadioButton 
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorVerde"
+                                    android:id="@+id/rb_estilo_monoespaciado"
+                                    android:text="@string/rb_estilo_monoespaciado" />
+                                
+                                <RadioButton 
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorVerde"
+                                    android:id="@+id/rb_estilo_tachado"
+                                    android:text="@string/rb_estilo_tachado" />
+                                
+                                <RadioButton 
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorVerde"
+                                    android:id="@+id/rb_estilo_vacio"
+                                    android:text="@string/rb_estilo_vacio" />
+                                
+                                <RadioButton 
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorVerde"
+                                    android:id="@+id/rb_estilo_invertir"
+                                    android:text="@string/rb_estilo_invertir" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:padding="10dp">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_atacar"
+                            android:textColor="@color/colorVerde"
+                            android:id="@+id/btn_atacar"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
