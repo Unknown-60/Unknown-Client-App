@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unknown60.unknownclient">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:resizeableActivity="false">
+
+        <service
+            android:name=".UnknownClientService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/unknown_client_service"/>
+
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+        </service>
+        
+        <activity
+            android:name="com.unknown60.unknownclient.actividades.PermisoActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.unknown60.unknownclient.actividades.InicioActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+      <meta-data
+          android:name="android.max_aspect"
+          android:value="4.0"/>
+
+    </application>
+	
+</manifest>
